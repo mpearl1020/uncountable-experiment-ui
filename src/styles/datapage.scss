@@ -1,0 +1,21 @@
+.data-page {
+    display: flex;
+    flex-direction: column;
+    .query-settings {
+        flex-direction: row;
+        .filter-sliders {
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+        .sort-buttons {
+            flex-direction: row;
+            text-align: center;
+            .sort-button {
+                margin-left: 1rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+    
+}

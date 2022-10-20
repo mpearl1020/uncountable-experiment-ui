@@ -1,0 +1,11 @@
+.scatter-plot {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    .graph-components {
+        .title {
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.graph-page {
+    align-items: center;
+    .settings {
+        display: flex;
+        justify-content: space-evenly;
+        .data-selects {
+            display: flex;
+        }
+    }
+}

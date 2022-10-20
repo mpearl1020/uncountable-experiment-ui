@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+.Collapsible {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-style: solid;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px  $shadow;
+    border-color: $border;
+    :hover {
+        cursor: pointer;
+    }
+    .experiment-container {
+        display: flex;
+        margin-top: 1rem;
+    }
+}
+
+.Collapsible__trigger {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Collapsible__trigger.is-open svg {
+    transform: rotate(180deg);
+    transition-duration: 1s;
+}
