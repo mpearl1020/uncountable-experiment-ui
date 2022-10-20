@@ -19,6 +19,8 @@ function DataPage() {
     const [tensileStrengthAsc, setTensileStrengthAsc] = useState(true);
     const [compressionSetAsc, setCompressionSetAsc] = useState(true);
 
+    console.log(cureTimeRange);
+
     const [experimentsData, setExperimentsData] = useState(getExperimentsInRange(viscosityRange, cureTimeRange, elongationRange, tensileStrengthRange, compressionSetRange));
 
     useEffect(() => {
@@ -72,7 +74,7 @@ function DataPage() {
                         onChange={setViscosityRange} 
                         label={(value) => value.toFixed(1)} 
                         minRange={0.1}
-                        step={0.1}
+                        step={0.01}
                         min={getOutputRange('Viscosity')[0]} 
                         max={getOutputRange('Viscosity')[1]}
                     />
@@ -82,9 +84,9 @@ function DataPage() {
                         onChange={setCureTimeRange} 
                         label={(value) => value.toFixed(1)} 
                         minRange={0.1}
-                        step={0.1}
-                        min={getOutputRange('Cure Time')[0]} 
-                        max={getOutputRange('cure Time')[1]}
+                        step={0.01}
+                        min={2.84} 
+                        max={3.98}
                     />
                     <p>Select a range for elongation</p>
                     <RangeSlider 
