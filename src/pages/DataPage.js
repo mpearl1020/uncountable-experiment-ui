@@ -19,8 +19,6 @@ function DataPage() {
     const [tensileStrengthAsc, setTensileStrengthAsc] = useState(true);
     const [compressionSetAsc, setCompressionSetAsc] = useState(true);
 
-    console.log(cureTimeRange);
-
     const [experimentsData, setExperimentsData] = useState(getExperimentsInRange(viscosityRange, cureTimeRange, elongationRange, tensileStrengthRange, compressionSetRange));
 
     useEffect(() => {
